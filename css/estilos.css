@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+estilos.css Usuarios con acceso No tienes permiso para ver la información de uso compartido de este elemento. Propiedades del sistema Tipo Style Sheet Tamaño 3 KB Almacenamiento utilizado 3 KBDe Educacion IT Ubicación css Propietario Educacion IT Creador Sabrina Castagno Berra Modificado 15 dic 2020 de Sabrina Castagno Berra Abierto 12:17 por mí Creado 14 dic 2021 Sin descripción Los lectores pueden descargar. @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
 
 @font-face {
     src: url(../fuentes/BodoniFLF-BoldItalic.ttf);
@@ -18,7 +18,7 @@ h2 {
 
 body {
     margin: 0;
-    padding: 0px;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
     font-size: 90%;
 }
@@ -64,6 +64,7 @@ header {
     text-align: center;
 }
 
+
 header div {
     width: 50%;
     background-color: rgba(255, 255, 255, 0.5);
@@ -101,6 +102,34 @@ main {
     background-color: #b45008;
 }
 
+.nosotros .grilla {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 200px 200px;
+}
+
+.grilla div {
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.grilla div:first-child {
+    background-position: -140px 0px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url(../imagenes/gym-01.jpg);
+}
+
+.grilla div:nth-child(2) {
+    background-image: url(../imagenes/gym-02.jpg);
+}
+
+.grilla div:nth-child(3) {
+    background-image: url(../imagenes/gym-03.jpg);
+}
+
 .nosotros h2 {
     font-family: miFuente;
     font-size: 2em;
@@ -111,7 +140,7 @@ h4 {
     color: #e8bf65;
     font-size: 1.4em;
     border-bottom: 1px dotted #b45008;
-    text-shadow: 2px 3px 2px rgba(200, 200, 14, 0.5);
+    text-shadow: 2px 3px 2px rgba(200, 200, 14, 0.5)
 }
 
 .division div img {
@@ -145,9 +174,27 @@ article {
     padding: 1em;
 }
 
+#chat {
+    position: fixed;
+    left: 97%;
+    top: 88%;
+    background-image: url(../imagenes/chat.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
 footer ul {
     margin: 0;
     padding: 0;
+}
+
+footer ul:first-of-type,
+footer p:first-child {
+    font-weight: bold;
 }
 
 footer {
